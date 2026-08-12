@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  TEMPORARY — delete this file once the /sources pages have left Google's index.
+
+  These pages now serve <meta name="robots" content="noindex, follow">, but Google
+  has to re-crawl a page to notice that, and they were just removed from the real
+  sitemap.xml, which is the main thing that prompts a re-crawl. Listing them here
+  with a fresh lastmod asks Google to fetch them again promptly, see the noindex,
+  and drop them.
+
+  Search Console will report a warning against this sitemap along the lines of
+  "Indexed, though blocked" or "Submitted URL marked noindex". That is the point;
+  the warning clearing is the signal that this file has done its job.
+
+  Check progress:  site:gpt.datacontract.com/sources/
+  Then: delete this file and unsubmit it in Search Console.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://gpt.datacontract.com/sources/cli.datacontract.com/</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://gpt.datacontract.com/sources/datacontract.com/</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://gpt.datacontract.com/sources/INSTRUCTIONS.html</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://gpt.datacontract.com/sources/cli.datacontract.com/CHANGELOG.html</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://gpt.datacontract.com/sources/datacontract.com/CHANGELOG.html</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://gpt.datacontract.com/sources/datacontract.com/workshop.html</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://gpt.datacontract.com/sources/docs.soda.io/soda-cl.html</loc>
+    <lastmod>2026-08-12</lastmod>
+  </url>
+</urlset>
