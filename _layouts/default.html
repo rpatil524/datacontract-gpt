@@ -11,6 +11,15 @@
 
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 
+    {% comment %}
+      The /sources mirror must stay readable for the GPT but must not compete in search
+      with the pages it copies. Matched on the URL as well as the _config.yml default so
+      a page still gets the tag if the default fails to apply.
+    {% endcomment %}
+    {% if page.noindex or page.url contains "/sources/" %}
+    <meta name="robots" content="noindex, follow">
+    {% endif %}
+
     {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <style>

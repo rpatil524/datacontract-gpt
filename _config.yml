@@ -1,5 +1,19 @@
+url: https://gpt.datacontract.com
+
 plugins:
   - jekyll-sitemap
 name: Data Contract GPT
 title: null
 description: Data Contract GPT for the Data Contract Specification to interactively create and modify data contracts.
+
+# The /sources tree is a verbatim mirror of cli.datacontract.com and datacontract.com,
+# published so the GPT can read it. Google indexed the copies instead of the originals:
+# 33k impressions a quarter at a 1.3% click rate, against 7.4% on the pages they copy.
+# Keep them crawlable — Googlebot has to fetch a page to see the noindex, and the GPT
+# fetches them too — but keep them out of the index and out of the sitemap.
+defaults:
+  - scope:
+      path: "sources"
+    values:
+      sitemap: false
+      noindex: true
